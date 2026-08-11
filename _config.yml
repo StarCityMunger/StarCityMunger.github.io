@@ -12,6 +12,7 @@ source: docs/
 destination: ./_site
 remote_theme: "./"
 
+url: "https://xcmg.org.cn" 
 # Theme settings
 site_author: Carlos Pereira Atencio
 # lang: en

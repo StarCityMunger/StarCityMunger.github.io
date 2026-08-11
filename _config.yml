@@ -8,7 +8,7 @@ plugins:
 
 # Configuring Jekyll to build the docs site from the `docs/` directory
 # while loading the local theme from the repo root
-source: docs/
+source: /
 destination: ./_site
 remote_theme: "./"
 

@@ -2,7 +2,7 @@ site_name: '星城芒格'
 site_description: '欢迎来到星城芒格的数据投资者站'
 repo_url: 'https://github.com/carlosperate/jekyll-theme-rtd'
 repo_name: 'GitHub'
-docs_dir: ['数据服务','docs','dm']
+docs_dir: ['data','option']
 site_dir: '_site_mkdocs/'
 copyright: '星城芒格'
 theme:

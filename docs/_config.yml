@@ -1,11 +1,11 @@
-title: Read The Docs Jekyll Theme
-description: Port of the Read the Docs theme to Jekyll to use with GitHub Pages.
+title: 星城芒格
+description: 欢迎来到星城芒格的数据投资者站
 plugins: [jekyll-remote-theme, jekyll-relative-links]
 remote_theme: carlosperate/jekyll-theme-rtd
 
 # Theme settings docs:
 # https://carlosperate.github.io/jekyll-theme-rtd/configuration/configyml.html
-site_author: Carlos Pereira Atencio
+site_author: 星城芒格
 lang: en
 locale: en_US
 repo_url: "https://github.com/carlosperate/jekyll-theme-rtd"

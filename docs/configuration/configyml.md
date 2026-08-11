@@ -33,7 +33,7 @@ search, analytics, and more:
 ```yaml
 # Name shown in the footer copyright and in the page author meta tag.
 # Default: Unset
-site_author: Carlos Pereira Atencio
+site_author: 星城芒格
 
 # Language for the site, used in the html lang attribute.
 # Should be a single BCP 47 language tag.
@@ -56,7 +56,7 @@ repo_url: 'https://github.com/carlosperate/jekyll-theme-rtd'
 # Default Jekyll: Unset, so the link will not appear.
 # Default GH Pages: Auto-detected, so the link will appear if unset.
 # Set to `false` to disable the "Edit on GitHub" link specifically.
-edit_on_github: true
+edit_on_github: false
 
 # GitHub branch to use for the "Edit on GitHub" links.
 # Default Jekyll: "main"

@@ -2,9 +2,9 @@ site_name: 'Read The Docs Jekyll Theme'
 site_description: 'Port of the Read the Docs theme to Jekyll to use with GitHub Pages.'
 repo_url: 'https://github.com/carlosperate/jekyll-theme-rtd'
 repo_name: 'GitHub'
-docs_dir: 'docs/'
+docs_dir: ['数据服务']
 site_dir: '_site_mkdocs/'
-copyright: 'Carlos Pereira Atencio'
+copyright: '星城芒格'
 theme:
   name: readthedocs
   include_homepage_in_sidebar: false

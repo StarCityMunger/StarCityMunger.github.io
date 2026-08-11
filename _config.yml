@@ -1,5 +1,5 @@
-title: Read The Docs Jekyll Theme
-description: Port of the Read the Docs theme to Jekyll to use with GitHub Pages.
+title: 星城芒格
+description: 欢迎来到星城芒格的数据投资者站
 exclude:
   - tests/
 plugins:
@@ -14,10 +14,10 @@ remote_theme: "./"
 
 url: "https://xcmg.org.cn" 
 # Theme settings
-site_author: Carlos Pereira Atencio
+site_author: 星城芒格
 # lang: en
 # locale: en_US
-repo_url: 'https://github.com/carlosperate/jekyll-theme-rtd'
+repo_url: 'https://github.com/StarCityMunger/StarCityMunger.github.io'
 # edit_on_github: true
 # github_branch: main
 # logo: docs/assets/img/jekyll-rtd-logo-250px.jpg

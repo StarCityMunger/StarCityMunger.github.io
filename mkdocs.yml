@@ -1,5 +1,5 @@
-site_name: 'Read The Docs Jekyll Theme'
-site_description: 'Port of the Read the Docs theme to Jekyll to use with GitHub Pages.'
+site_name: '星城芒格'
+site_description: '欢迎来到星城芒格的数据投资者站'
 repo_url: 'https://github.com/carlosperate/jekyll-theme-rtd'
 repo_name: 'GitHub'
 docs_dir: ['数据服务']

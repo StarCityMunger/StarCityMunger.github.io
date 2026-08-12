@@ -134,10 +134,17 @@
 
 /* 图片容器 */
 .pic_w .pic {
-    max-height: 50px;
-    width: auto;        /* 宽度自动适配 */
-    height: auto;       /* 高度自动适配 */ 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* 图片本身：固定宽度，高度自适应 */
+.pic_w .pic img {
+    width: 80px;                /* 根据实际需要调整 */
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }

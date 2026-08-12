@@ -103,6 +103,17 @@
 /* 底部二维码 */
 
 /* 每个卡片：标题在上，图片在下 */
+.footer {
+    display: flex;
+    flex-wrap: wrap;           /* 强制不换行 */
+    align-items: center;         /* 垂直居中 */
+    justify-content: center;     /* 水平居中（可根据需要改为 flex-start/space-around） */
+    gap: 20px;                  /* 卡片间距 */
+    overflow-x: auto;           /* 宽度不足时水平滚动 */
+    padding: 16px 24px;
+    background: #f8f9fa;        /* 示范背景 */
+    border-top: 1px solid #e8ecf1;
+}
 .pic_w {
     display: flex;
     flex-direction: column;     /* 垂直排列标题和图片 */

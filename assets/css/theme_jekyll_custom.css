@@ -99,3 +99,31 @@
 .rst-content .label-yellow { background: #f1c40f; color: #333; }
 .rst-content .label-red    { background: #e74c3c; color: #fff; }
 .rst-content .label-gray   { background: #7f8c8d; color: #fff; }
+
+/* 底部二维码 */
+
+/* 每个卡片：标题在上，图片在下 */
+.pic_w {
+    display: flex;
+    flex-direction: column;     /* 垂直排列标题和图片 */
+    align-items: center;        /* 水平居中 */
+    flex-shrink: 0;             /* 防止被压缩 */
+    text-align: center;
+    min-width: 80px;            /* 保证最小宽度，避免过挤 */
+}
+
+/* 标题样式 */
+.pic_w .t {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: 500;
+    white-space: nowrap;        /* 标题不换行 */
+}
+
+/* 图片容器 */
+.pic_w .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -134,6 +134,9 @@
 
 /* 图片容器 */
 .pic_w .pic {
+    max-height: 50px;
+    width: auto;        /* 宽度自动适配 */
+    height: auto;       /* 高度自动适配 */ 
     display: flex;
     justify-content: center;
     align-items: center;

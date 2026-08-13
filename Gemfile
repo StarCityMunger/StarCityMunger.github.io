@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
+gem 'jekyll-sitemap'
 gemspec
 
 # This commit adds relative-path capability to `remote_theme` support.

@@ -11,7 +11,7 @@ plugins:
 # while loading the local theme from the repo root
 source: /
 destination: ./_site
-remote_theme: "./"
+remote_theme: carlosperate/jekyll-theme-rtd
 
 url: "https://xcmg.org.cn" 
 # Theme settings

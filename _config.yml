@@ -5,6 +5,7 @@ exclude:
 plugins:
   - jekyll-remote-theme
   - jekyll-relative-links
+  - jekyll-sitemap
 
 # Configuring Jekyll to build the docs site from the `docs/` directory
 # while loading the local theme from the repo root

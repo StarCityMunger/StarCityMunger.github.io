@@ -19,7 +19,7 @@ site_author: 星城芒格
 # lang: en
 # locale: en_US
 repo_url: 'https://github.com/StarCityMunger/StarCityMunger.github.io'
-# edit_on_github: true
+edit_on_github: false
 # github_branch: main
 # logo: docs/assets/img/jekyll-rtd-logo-250px.jpg
 # favicon: docs/assets/img/favicon/favicon.ico
@@ -35,7 +35,7 @@ prev_next_buttons_location: both
 search_enabled: true
 # hljs_style: atom-one-dark
 hljs_languages: [ruby, python, javascript, bash, yaml, markdown]
-# admonitions: true
+admonitions: true
 # mermaid: true
 # display_version: 1.4.0
 # social_image: docs/assets/img/jekyll-rtd-social-media.jpg

@@ -8,7 +8,7 @@
 
 <p style="text-indent: 2em;">目前个人运营*[星城芒格](https://xcmg.vip.cpolar.cn/)*{: .label .label-red }数据投资站,致力成为个人投资者的*数据服务助手*{: .label .label-red }, 同时也公开期权实盘。欢迎大家关注同名公众号获取账号密码查看详细数据服务及实盘信息。
 
-## 数据服务(#){: .btn }
+## 数据服务
 
 - [估值分析](https://xcmg.vip.cpolar.cn/valuation)
 <p style="text-indent: 2em;">展示 m1/自由流通市值、m2/自由流通市值、成交额/自由流通市值、融资余额/自由流通市值、融资买入额/成交额、融资余额、股债利差、综合股债利差等指标与沪深300等宽基指数走势的关系。
@@ -28,7 +28,7 @@
 - [历史相似走势](https://xcmg.vip.cpolar.cn/similar_trend)
 <p style="text-indent: 2em;">不做任何预测，仅展示历史数据的实际分布, 如: 历史上与创业板指数最近两日涨跌幅最相近的那些日期, 未来1天/3天/5天的涨跌分布。可以通过客观数据来检验网上某些大V的历史复盘是否经得起推敲。
   
-## 期权实盘(#){: .btn }
+## 期权实盘
 
 - [期权账户](https://xcmg.vip.cpolar.cn/realtime)
 <p style="text-indent: 2em;">实时展示期权账户实盘信息，包括: 实时持仓和交易、当日盈利、风险度及资金占用情况。

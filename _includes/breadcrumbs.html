@@ -21,7 +21,7 @@
       {%- elsif site.repo_url == nil and site.github.repository_url %}
         {%- assign breadcrumb_repo_url = site.github.repository_url %}
       {%- endif %}
-      {%- assign edit_on_github = site.edit_on_github | default: true %}
+      {%- assign edit_on_github = site.edit_on_github | default: false %}
       {%- if edit_on_github and breadcrumb_repo_url and page and page.name != "search.html" %}
         {% comment %} For the repo branch first try config.yml value, then GitHub Page Metadata {% endcomment %}
         {% assign repo_branch = site.github_branch | default: site.github.source.branch | default: 'main' %}

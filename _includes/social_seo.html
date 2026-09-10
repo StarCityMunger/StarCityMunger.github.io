@@ -46,20 +46,20 @@
 {%- if page.canonical_url -%}
   {%- assign _sm_url = page.canonical_url -%}
 {%- else -%}
-  {%- assign _sm_url = page.url | absolute_url -%}
+  {%- assign _sm_url = page.url | relative_url -%}
 {%- endif -%}
 
 {%- comment -%}--- Resolve social image ---
   Priority: page.social_image > site.social_image > site.logo (fallback)
 {%- endcomment -%}
 {%- if page.social_image -%}
-  {%- assign _sm_image = page.social_image | absolute_url -%}
+  {%- assign _sm_image = page.social_image | relative_url -%}
   {%- assign _sm_image_alt = page.social_image_alt | default: page.title | default: site.title -%}
 {%- elsif site.social_image -%}
-  {%- assign _sm_image = site.social_image | absolute_url -%}
+  {%- assign _sm_image = site.social_image | relative_url -%}
   {%- assign _sm_image_alt = site.social_image_alt | default: site.title -%}
 {%- elsif site.logo -%}
-  {%- assign _sm_image = site.logo | absolute_url -%}
+  {%- assign _sm_image = site.logo | relative_url -%}
   {%- assign _sm_image_alt = site.title -%}
 {%- endif -%}
 
@@ -113,16 +113,16 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "{{ '/' | absolute_url }}#website",
+    "@id": "{{ '/' | relative_url }}#website",
     "name": {{ site.title | jsonify }},
-    "url": {{ '/' | absolute_url | jsonify }},
+    "url": {{ '/' | relative_url | jsonify }},
     "inLanguage": {{ site.lang | default: 'en' | jsonify }}{% if site.description %},
     "description": {{ site.description | jsonify }}{% endif %}{% unless site.search_enabled == false %},
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "{{ '/search/' | absolute_url }}?q={search_term_string}"
+        "urlTemplate": "{{ '/search/' | relative_url }}?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }{% endunless %}
@@ -143,7 +143,7 @@
     "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endif %}{% if page.date_last_modified %},
     "dateModified": {{ page.date_last_modified | date_to_xmlschema | jsonify }}{% endif %}{% if _sm_author %},
     "author": {"@type": "Person", "name": {{ _sm_author | jsonify }}}{% endif %},
-    "isPartOf": {"@id": "{{ '/' | absolute_url }}#website"}
+    "isPartOf": {"@id": "{{ '/' | relative_url }}#website"}
   }
   </script>
 {%- endif %}

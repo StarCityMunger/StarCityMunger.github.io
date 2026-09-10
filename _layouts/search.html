@@ -9,7 +9,7 @@ layout: base
   </div>
 
   <!-- We only need to load the search dependencies in this page. -->
-  <script src="{{ 'assets/js/lunr-2.3.9.min.js' | absolute_url }}"></script>
+  <script src="{{ 'assets/js/lunr-2.3.9.min.js' | relative_url }}"></script>
   <script type="text/javascript">
     "use strict";
 
@@ -61,7 +61,7 @@ layout: base
           this.field('author');
           this.field('content');
         });
-        $.getJSON("{{ 'assets/search/search_data.json' | absolute_url }}").then(function(search_data) {
+        $.getJSON("{{ 'assets/search/search_data.json' | relative_url }}").then(function(search_data) {
           var idx = lunr(function() {
             this.field('id');
             this.field('title', { boost: 10 });

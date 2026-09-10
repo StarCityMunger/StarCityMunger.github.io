@@ -5,23 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   {%- if site.favicon -%}
-  <link rel="shortcut icon" href="{{ site.favicon | absolute_url }}" />
+  <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" />
   {%- else %}
-  <link rel="shortcut icon" href="{{ 'assets/img/favicon.ico' | absolute_url  }}" />
+  <link rel="shortcut icon" href="{{ 'assets/img/favicon.ico' | relative_url  }}" />
   {%- endif %}
 
   <title>{% if page and page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 
-  <link rel="stylesheet" href="{{ 'assets/css/theme.css' | absolute_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/theme_extra.css' | absolute_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/theme_jekyll_custom.css' | absolute_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/theme.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/theme_extra.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/theme_jekyll_custom.css' | relative_url }}" />
   {%- if site.hljs_style %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/{{site.hljs_style}}.min.css" />
   {%- else %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css" />
   {%- endif %}
   {%- for path in site.extra_css %}
-  <link rel="stylesheet" href="{{ path | absolute_url }}" />
+  <link rel="stylesheet" href="{{ path | relative_url }}" />
   {%- endfor %}
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" defer></script>
@@ -41,9 +41,9 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search">
           {%- if site.logo %}
-            <a href="{{ '/' | absolute_url }}"><img src="{{ site.logo | absolute_url}}" class="logo" alt="Logo"></a>
+            <a href="{{ '/' | relative_url }}"><img src="{{ site.logo | relative_url}}" class="logo" alt="Logo"></a>
           {%- else %}
-            <a href="{{ '/' | absolute_url }}" class="icon icon-home"> {{ site.title }}</a>
+            <a href="{{ '/' | relative_url }}" class="icon icon-home"> {{ site.title }}</a>
           {%- endif %}
           {%- if site.display_version %}
             <div class="version">
@@ -64,7 +64,7 @@
       {%- comment %} MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE {% endcomment %}
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </nav>
 
       {%- comment %} PAGE CONTENT {% endcomment %}
@@ -86,19 +86,19 @@
 
   {% include versions.html %}
 
-  <script src="{{ 'assets/js/jquery-3.6.0.min.js' | absolute_url  }}"></script>
+  <script src="{{ 'assets/js/jquery-3.6.0.min.js' | relative_url  }}"></script>
   {%- unless site.admonitions == false %}
-  <script src="{{ 'assets/js/adomonitions-0.3.1.umd.min.js' | absolute_url }}"></script>
+  <script src="{{ 'assets/js/adomonitions-0.3.1.umd.min.js' | relative_url }}"></script>
   {%- endunless %}
   {%- unless site.mermaid == false %}
-  <script src="{{ 'assets/js/mermaid-11.14.0.min.js' | absolute_url }}"></script>
+  <script src="{{ 'assets/js/mermaid-11.14.0.min.js' | relative_url }}"></script>
   {%- endunless %}
-  <script src="{{ 'assets/js/anchor-5.0.0.min.js' | absolute_url }}"></script>
-  <script src="{{ 'assets/js/theme_extra.js' | absolute_url }}"></script>
-  <script src="{{ 'assets/js/theme.js' | absolute_url }}"></script>
-  <script src="{{ 'assets/js/theme_jekyll_custom.js' | absolute_url }}"></script>
+  <script src="{{ 'assets/js/anchor-5.0.0.min.js' | relative_url }}"></script>
+  <script src="{{ 'assets/js/theme_extra.js' | relative_url }}"></script>
+  <script src="{{ 'assets/js/theme.js' | relative_url }}"></script>
+  <script src="{{ 'assets/js/theme_jekyll_custom.js' | relative_url }}"></script>
   {% for path in site.extra_javascript %}
-  <script src="{{ path | absolute_url }}"></script>
+  <script src="{{ path | relative_url }}"></script>
   {% endfor %}
   <script>
     window.addEventListener('load', function() {
